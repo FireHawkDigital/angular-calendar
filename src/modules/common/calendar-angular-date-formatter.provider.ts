@@ -54,7 +54,7 @@ export class CalendarAngularDateFormatter
   public weekViewTitle({ date, locale }: DateFormatterParams): string {
     const year: string = new DatePipe(locale).transform(date, 'y', locale);
     const weekNumber: number = getISOWeek(date);
-    return `Week ${weekNumber} of ${year}`;
+    return `Week ${weekNumber} - `;
   }
 
   /**
